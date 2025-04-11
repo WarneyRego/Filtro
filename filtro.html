@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urubu Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./public/images/logoo.png" alt="Urubu Tech Logo">
+            <span>Urubu Tech</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Início</a></li>
+            <li><a href="#"><i class="fas fa-tag"></i> Promoções</a></li>
+            <li><a href="#"><i class="fas fa-trophy"></i> Lançamentos</a></li>
+            <li><a href="#"><i class="fas fa-headset"></i> Suporte</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="#" class="icon-btn"><i class="fas fa-search"></i></a>
+            <a href="#" class="icon-btn"><i class="fas fa-user"></i></a>
+            <a href="#" class="botao-carrinho">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="contador-carrinho">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Loja pra Torcida Organizada</h1>
+        <p>Melhor loja de periféricos e eletrônicos da Nação Rubro Negra!</p>
+        <div class="header-cta">
+            <button class="btn-primary"><i class="fas fa-percent"></i> Ver ofertas</button>
+            <button class="btn-secondary"><i class="fas fa-info-circle"></i> Saiba mais</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <section class="filtros">
+                <h2><i class="fas fa-filter"></i> Filtrar Produtos</h2>
+                <div class="campo-filtro">
+                    <div class="input-icon">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="filtro-nome" placeholder="Digite o nome do produto..." oninput="filtrarAutomaticamente()">
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="filtro-categoria">
+                            <option value="">Todas as categorias</option>
+                            <option value="Periféricos">Periféricos</option>
+                            <option value="Monitores">Monitores</option>
+                            <option value="Móveis">Móveis</option>
+                            <option value="Computadores">Computadores</option>
+                            <option value="Armazenamento">Armazenamento</option>
+                            <option value="Componentes">Componentes</option>
+                            <option value="Áudio">Áudio</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                
+                <div class="estatisticas">
+                    <div class="estatistica">
+                        <i class="fas fa-cubes"></i>
+                        <div>
+                            <strong>Total de produtos:</strong> 
+                            <span id="total-produtos">0</span>
+                        </div>
+                    </div>
+                    <div class="estatistica">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div>
+                            <strong>Valor total:</strong> 
+                            <span id="valor-total">R$ 0,00</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="selo-promocional">
+                <img src="./public/images/selofoda.png" alt="Selo Promocional - Galantia de 5 segundos">
+            </div>
+        </div>
+        
+        <div id="produtos" class="produtos">
+          
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre a Urubu Tech</h3>
+                <p>A melhor loja de tecnologia para a Nação Rubro-Negra!</p>
+             
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Promorar, 123</p>
+                <p><i class="fas fa-phone"></i> (86) 4002-8922</p>
+                <p><i class="fas fa-envelope"></i> contato@urubutech.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Urubu Tech - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
